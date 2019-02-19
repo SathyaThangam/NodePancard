@@ -22,7 +22,7 @@ module.exports = {
       user : 'root',
       host : '159.89.165.174',
       ref  : 'origin/master', 
-      repo : 'https://github.com/SathyaThangam/NodePancard.git',
+      repo : 'git@github.com:SathyaThangam/NodePancard.git',
       path : '/var/www/NodePancard',
       // 'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
       'post-deploy' : 'npm install --production && pm2 del NodePancard || pm2 start index.js --name "NodePancard"'
